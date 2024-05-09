@@ -1,0 +1,24 @@
+﻿@model DriveFileResponse
+
+<div class="container">
+    <h2>Drive Files</h2>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>MIME Type</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var file in Model.Files)
+            {
+                <tr>
+                    <td>@file.Name</td>
+                    <td>@file.MimeType</td>
+                    <td>@file.Id</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

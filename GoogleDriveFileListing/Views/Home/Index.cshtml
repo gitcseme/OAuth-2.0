@@ -1,0 +1,14 @@
+﻿@model OAuthViewModel
+
+<div class="container">
+    <h2>Google drive file listing with Auth 2.0</h2>
+    <button class="btn btn-primary" onclick="googleConcent()">Login with Google</button>
+</div>
+
+<script type="text/javascript">
+
+    const googleConcent = () => {
+        window.location.href = `@Html.Raw(Model.ConcentUrl)`;
+    }
+
+</script>
